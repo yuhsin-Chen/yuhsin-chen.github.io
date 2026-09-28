@@ -3,7 +3,7 @@ import pandas as pd
 import statsmodels.api as sm
 
 # 1. 讀取資料 (直接從 GitHub 讀取 raw 資料)
-df = pd.read_csv("https://raw.githubusercontent.com/yuhsin-Chen/yuhsin-chen.github.io/main/machine%20learning/Salary_Data.csv")
+url = "https://raw.githubusercontent.com/yuhsin-Chen/yuhsin-chen.github.io/main/machine%20learning/Salary_Data.csv"
 df = pd.read_csv(url)
 x = df["YearsExperience"].values
 y = df["Salary"].values
